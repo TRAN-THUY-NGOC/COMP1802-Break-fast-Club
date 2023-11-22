@@ -627,26 +627,27 @@ body, html {
     z-index: 2;
 }
 
-#background_image, #background_image2 {
+#background_image {
     position: relative;
     width: 100%;
     height: 100vh;
 }
 
-#background_image2 img {
+#background_image img {
     width: 100%;
     height: 100%;
 }
 
 #settingsButton {
     position: absolute;
-    top: 0;
+    top: 0px;
 }
 
 #backgroundOptions {
     display: none;
     position: absolute;
     top: 50px;
+    z-index: 3;
 }
 
 #backgroundList {
@@ -664,9 +665,9 @@ body, html {
     color: black;
 }
 
-#audio, #audio2 {
+#audio {
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 130px;
     z-index: 1;
     width: 270px;
