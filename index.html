@@ -9,30 +9,41 @@
 </head>
 <body>
 	<div id="container">
-        <audio id="audio" controls autoplay>
-            <source id="audioSource" src="./assets/Music/Nhạc tết.mp3">
-        </audio>
-    </div>
-    <div id="container2" style="display:none;">
-        <audio id="audio2" controls autoplay>
-            <source id="audioSource2" src="./assets/Music/Babysharkdododo.mp3">
-        </audio>
-    </div>
-    <div id="background_image">
-        <img id="backgroundImage" src="./assets/images/bg1.png" alt="Background">
-    </div>
-    <div id="background_image2" style="display:none;">
-        <img id="backgroundImage2" src="./assets/images/bg2.jpg" alt="Background">
-    </div>
-    <button id="settingsButton" class="btn_change" onclick="toggleSettings()"><h2>Tùy chọn</h2></button>
-    <div id="backgroundOptions" style="display:none;">
-        <ul id="backgroundList">
-            <li><button class="btn_change" onclick="changeBackground(0)"><h4>Nền 1</h4></button></li>
-            <li><button class="btn_change" onclick="changeBackground(1)"><h4>Nền 2</h4></button></li>
-            <li><button class="btn_change" onclick="changeMusic('./assets/Music/Nhạc tết.mp3')"><h4>Nhạc 1</h4></button></li>
-            <li><button class="btn_change" onclick="changeMusic('./assets/Music/Babysharkdododo.mp3')"><h4>Nhạc 2</h4></button></li>
-        </ul>
-    </div>
+		<audio id="audio" controls autoplay>
+		  <source id="audioSource" src="./assets/Music/Nhạc tết.mp3" />
+		</audio>
+	  </div>
+	  <div id="background_image">
+		<img id="backgroundImage" src="./assets/images/bg1.png" alt="Background" />
+	  </div>
+	  <button id="settingsButton" class="btn_change" onclick="toggleSettings()">
+		<h2>Tùy chọn</h2>
+	  </button>
+	  <div id="backgroundOptions" style="display: none">
+		<ul id="backgroundList">
+		  <li>
+			<button class="btn_change" onclick="changeBackground(0)">
+			  <h4>Nền 1</h4>
+			</button>
+		  </li>
+		  <li>
+			<button class="btn_change" onclick="changeBackground(1)">
+			  <h4>Nền 2</h4>
+			</button>
+		  </li>
+		  <li>
+			<button class="btn_change" onclick="changeMusic('./assets/Music/Nhạc tết.mp3')">
+			  <h4>Nhạc 1</h4>
+			</button>
+		  </li>
+		  <li>
+			<button class="btn_change" onclick="changeMusic('./assets/Music/Babysharkdododo.mp3')">
+			  <h4>Nhạc 2</h4>
+			</button>
+		  </li>
+		</ul>
+	  </div>
+	  
 	<div id="botnuoc5" class="bnc"><img src="./assets/images/botnuoc.gif" alt="Bọt nước4"></div>
 	<div id="botnuoc4" class="bnc"><img src="./assets/images/botnuoc.gif" alt="Bọt nước4"></div>
 	<div id="botnuoc3" class="bnc"><img src="./assets/images/botnuoc.gif" alt="Bọt nước3"></div>
