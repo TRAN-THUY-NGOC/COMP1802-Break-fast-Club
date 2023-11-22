@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
 	<title> Hồ Cá Cute
 	</title>
@@ -9,14 +9,34 @@
 </head>
 <body>
 	<div id="container">
-		<audio id="audio" controls autoplay>
-			<source src="./assets/Music/Nhạc tết.mp3">
-		</audio>
-	</div>	
-	<div id="background_image"><img src="./assets/images/bg1.png" alt="Background"></div>
-	<div id="background_image"><img src="./assets/images/bg2.jpg" alt="Background"></div>
+        <audio id="audio" controls autoplay>
+            <source id="audioSource" src="./assets/Music/Nhạc tết.mp3">
+        </audio>
+    </div>
+    <div id="container2" style="display:none;">
+        <audio id="audio2" controls autoplay>
+            <source id="audioSource2" src="./assets/Music/Babysharkdododo.mp3">
+        </audio>
+    </div>
+    <div id="background_image">
+        <img id="backgroundImage" src="./assets/images/bg1.png" alt="Background">
+    </div>
+    <div id="background_image2" style="display:none;">
+        <img id="backgroundImage2" src="./assets/images/bg2.jpg" alt="Background">
+    </div>
+    <button id="settingsButton" class="btn_change" onclick="toggleSettings()"><h2>Tùy chọn</h2></button>
+    <div id="backgroundOptions" style="display:none;">
+        <ul id="backgroundList">
+            <li><button class="btn_change" onclick="changeBackground(0)"><h4>Nền 1</h4></button></li>
+            <li><button class="btn_change" onclick="changeBackground(1)"><h4>Nền 2</h4></button></li>
+            <li><button class="btn_change" onclick="changeMusic('./assets/Music/Nhạc tết.mp3')"><h4>Nhạc 1</h4></button></li>
+            <li><button class="btn_change" onclick="changeMusic('./assets/Music/Babysharkdododo.mp3')"><h4>Nhạc 2</h4></button></li>
+        </ul>
+    </div>
 
-        <div id="ca1"><img src="./assets/images/ca1.gif" alt="Cá 1"></div>
+	<div id="botnuoc2"><img src="./assets/images/botnuoc2.gif" alt="Bọt nước"></div>
+	<div id="botnuoc"><img src="./assets/images/botnuoc.gif" alt="Bọt nước"></div>
+    <div id="ca1"><img src="./assets/images/ca1.gif" alt="Cá 1"></div>
 	<div id="ca21"><img src="./assets/images/ca2.gif" alt="Cá 21"></div>
 	<div id="ca22"><img src="./assets/images/ca2.gif" alt="Cá 22"></div>
 	<div id="ca23"><img src="./assets/images/ca2.gif" alt="Cá 23"></div>
@@ -28,11 +48,7 @@
 	<div id="sua"><img src="./assets/images/sứa.gif" alt="Sứa"></div>
 	<div id="ngoctrai"><img src="./assets/images/ngoctrai.gif" alt="Ngọc trai"></div>
 	<div id="sanho"><img src="./assets/images/sanho.gif" alt="San hô"></div>
-	
-	<div id="botnuoc1"><img src="./assets/images/botnuoc.gif" alt=" Bọt nước"></div>
-	<div id="botnuoc2"><img src="./assets/images/botnuoc.gif" alt=" Bọt nước"></div>
-	<div id="botnuoc3"><img src="./assets/images/botnuoc.gif" alt=" Bọt nước"></div>
-	<div id="botnuoc4"><img src="./assets/images/botnuoc.gif" alt=" Bọt nước"></div>
+	<div id="botnuoc"><img src="./assets/images/botnuoc.gif" alt=""></div>
 
 	<div id="rong11" class="rong"><img src="./assets/images/rong1.gif" alt="Rong11"></div>
 	<div id="rong12" class="rong"><img src="./assets/images/rong1.gif" alt="Rong12"></div>
@@ -40,13 +56,6 @@
 	<div id="rong14" class="rong"><img src="./assets/images/rong1.gif" alt="Rong14"></div>
 	<div id="rong2" class="rong"><img src="./assets/images/rong2.gif" alt="Rong2"></div>
 	<div id="rong3"><img src="./assets/images/rong3.gif" alt="Rong3"></div>
-
-
-	<button id="bg1" class="btn_change">Background 1</button>
-	<button id="bg2" class="btn_change">Background 2</button>
-
-	<button id="nhac1" class="btn_change">Nhạc 1</button>
-	<button id="nhac2" class="btn_change">Nhạc 2</button>
 </div>
 <script src="./assets/style/changebg.js"></script>
 </body>
