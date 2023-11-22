@@ -1,6 +1,6 @@
 var bg = [
   './assets/images/bg1.png',
-  './assets/images/bg5.jpg',
+  './assets/images/bg2.jpg',
 ];
 var audioSources = [
       './assets/Music/Nhạc tết.mp3',
