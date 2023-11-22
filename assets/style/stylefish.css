@@ -479,12 +479,12 @@ body, html {
     95% { left: 10px; top: 50px; -ms-transform: scaleX(-1); }
     100% { left: 0px; top: 50px; -ms-transform: scaleX(1); }
 }
-#sua {
+#sua1 {
     position: absolute;
     left: 330px;
     animation: Sua 20s ease-in-out 0s infinite;
 }
-#sua img {
+.sua img {
     width: 150px;
 }
 @keyframes Sua {
@@ -537,39 +537,95 @@ body, html {
     80% { bottom: 300px; left: 300px; }
     100% { bottom: 350px; left: 300px; }
 }
+#sua2 {
+    position: absolute;
+    left: 700px;
+    animation: Sua2 25s ease-in-out 0s infinite;
+}
+
+@keyframes Sua2 {
+    0% { bottom: -100px; left: 700px; }
+    10% { bottom: 0px; left: 700px; }
+    20% { bottom: 100px; left: 700px; }
+    35% { bottom: 150px; left: 700px; }
+    50% { bottom: 200px; left: 700px; }
+    65% { bottom: 250px; left: 700px; }
+    80% { bottom: 301px; left: 700px; }
+    100% { bottom: 350px; left: 700px; }
+}
+@-webkit-keyframes Sua2 {
+    0% { bottom: -100px; left: 700px; }
+    10% { bottom: 0px; left: 700px; }
+    20% { bottom: 50px; left: 700px; }
+    35% { bottom: 150px; left: 700px; }
+    50% { bottom: 200px; left: 700px; }
+    65% { bottom: 250px; left: 700px; }
+    80% { bottom: 301px; left: 700px; }
+    100% { bottom: 350px; left: 700px; }
+}
+@-moz-keyframes Sua2 {
+    0% { bottom: -100px; left: 700px; }
+    10% { bottom: 0px; left: 700px; }
+    20% { bottom: 100px; left:  700px;}
+    35% { bottom: 150px; left: 700px; }
+    50% { bottom: 200px; left: 700px; }
+    65% { bottom: 250px; left: 700px; }
+    80% { bottom: 301px; left: 700px; }
+    100% { bottom: 350px; left: 300px; }
+}
+@-o-keyframes Sua2 {
+    0% { bottom: -100px; left: 700px; }
+    10% { bottom: 0px; left: 700px; }
+    20% { bottom: 50px; left: 700px; }
+    35% { bottom: 150px; left: 700px; }
+    50% { bottom: 200px; left: 700px; }
+    65% { bottom: 250px; left: 700px; }
+    80% { bottom: 301px; left: 700px; }
+    100% { bottom: 350px; left: 700px; }
+}
+@-ms-keyframes Sua2 {
+    0% { bottom: -100px; left: 700px; }
+    10% { bottom: 0px; left: 700px; }
+    20% { bottom: 50px; left: 700px;}
+    35% { bottom: 150px; left: 700px; }
+    50% { bottom: 200px; left: 700px; }
+    65% { bottom: 250px; left: 700px; }
+    80% { bottom: 301px; left: 700px; }
+    100% { bottom: 350px; left: 700px; }
+}
 #sanho {
     position: absolute;
     left: 150px;
     bottom: -40px;
 }
 #sanho img {
-    width: 50%
+    width: 40%
 }
 #ngoctrai {
     position: absolute;
-    right: -70px;
+    right: -140px;
     bottom: -35px;
 }
 #ngoctrai img {
     width: 45%
 }
 .rong img{
-    width: 80%;
+    width: 63%;
 }
 .rong{
     bottom: -10px;
 }
 #rong11 {
     position: absolute;
-    right: -60px;
+    right: -150px;
 }
 #rong12 {
     position: absolute;
-    right: -120px;
+    right: -200px;
 }
 #rong13 {
     position: absolute;
-    left: -60px;
+    left: -70px;
 }
 #rong14 {
     position: absolute;
@@ -585,7 +641,7 @@ body, html {
     left: 260px;
 }
 #rong3 img {
-    width: 90%;
+    width: 80%;
 }
 #botnuoc {
     position: absolute;
@@ -646,7 +702,7 @@ body, html {
 #backgroundOptions {
     display: none;
     position: absolute;
-    top: 50px;
+    top: 43px;
     z-index: 3;
 }
 
@@ -668,8 +724,8 @@ body, html {
 #audio {
     position: absolute;
     top: 0px;
-    left: 130px;
+    left: 113px;
     z-index: 1;
-    width: 270px;
-    height: 45px;
+    width: 250px;
+    height: 40px;
 }
