@@ -20,10 +20,19 @@ var bg = [
         backgroundOptions.style.display = 'none';
       }
     }
-    
-    function changeMusic(src) {
-      const audioSource = document.getElementById('audioSource');
-      console.log('Changing music to:', src);
-      audioSource.src = src;
-      document.getElementById('audio').load();
-    }
+    function toggleMusic() {
+      var musicOptions = document.getElementById("musicOptions");
+      if (musicOptions.style.display === "none") {
+          musicOptions.style.display = "block";
+      } else {
+          musicOptions.style.display = "none";
+      }
+  }
+
+  function playMusic(source) {
+      var audioSource = document.getElementById("audioSource");
+      audioSource.src = source; 
+      var audio = document.getElementById("audio");
+      audio.load();
+      audio.play();
+  }
