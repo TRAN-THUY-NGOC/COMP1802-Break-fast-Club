@@ -8,16 +8,34 @@
 	<link rel="icon" href="./assets/images/logo.png">
 </head>
 <body>
+	<button id="musicButton" class="btn_change" onclick="toggleMusic()">
+		<h3>Đổi nhạc</h3>
+	</button>
+	<div id="musicOptions" style="display: none">
+		<ul id="musicList">
+			<li>
+				<button class="btn_change" onclick="playMusic('./assets/Music/Nhạc tết.mp3')">
+					<h4>Nhạc 1</h4>
+				</button>
+			</li>
+			<li>
+				<button class="btn_change" onclick="playMusic('./assets/Music/Babysharkdododo.mp3')">
+					<h4>Nhạc 2</h4>
+				</button>
+			</li>
+		</ul>
+	</div>
 	<div id="container">
 		<audio id="audio" controls autoplay>
-		  <source id="audioSource" src="./assets/Music/Nhạc tết.mp3" />
+			<source id="audioSource" src="./assets/Music/Nhạc tết.mp3" />
 		</audio>
-	  </div>
+	</div>
+
 	  <div id="background_image">
 		<img id="backgroundImage" src="./assets/images/bg1.png" alt="Background" />
 	  </div>
 	  <button id="settingsButton" class="btn_change" onclick="toggleSettings()">
-		<h3>Tùy chọn</h3>
+		<h3>Đổi nền</h3>
 	  </button>
 	  <div id="backgroundOptions" style="display: none">
 		<ul id="backgroundList">
@@ -29,16 +47,6 @@
 		  <li>
 			<button class="btn_change" onclick="changeBackground(1)">
 			  <h4>Nền 2</h4>
-			</button>
-		  </li>
-		  <li>
-			<button class="btn_change" onclick="changeMusic('./assets/Music/Nhạc tết.mp3')">
-			  <h4>Nhạc 1</h4>
-			</button>
-		  </li>
-		  <li>
-			<button class="btn_change" onclick="changeMusic('./assets/Music/Babysharkdododo.mp3')">
-			  <h4>Nhạc 2</h4>
 			</button>
 		  </li>
 		</ul>
