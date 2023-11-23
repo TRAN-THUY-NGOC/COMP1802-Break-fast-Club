@@ -693,16 +693,19 @@ body, html {
     width: 100%;
     height: 100%;
 }
-
+/* Nut background */
 #settingsButton {
     position: absolute;
-    top: 0px;
+    top: 0;
+    left: 0px; 
+    z-index: 2;
 }
 
 #backgroundOptions {
     display: none;
     position: absolute;
     top: 43px;
+    left: 0px;
     z-index: 3;
 }
 
@@ -716,6 +719,32 @@ body, html {
     margin-bottom: 5px;
 }
 
+/* Nut nhac */
+#musicButton {
+    position: absolute;
+    top: 0;
+    left: 105px;
+    z-index: 2;
+}
+
+#musicOptions {
+    display: none;
+    position: absolute;
+    top: 43px;
+    left: 105px;
+    z-index: 3;
+}
+
+#musicList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#musicList li {
+    margin-bottom: 5px;
+}
+
 .btn_change:hover {
     background-color: yellow;
     color: black;
@@ -723,8 +752,8 @@ body, html {
 
 #audio {
     position: absolute;
-    top: 0px;
-    left: 113px;
+    top: 0;
+    right: 0;
     z-index: 1;
     width: 250px;
     height: 40px;
